@@ -1,0 +1,28 @@
+
+@mixin caixa($ample, $color-cantons, $color-fons) {
+    box-sizing: border-box;
+    padding: 10px 0px;
+    width: $ample;
+    border: 2px solid $color-cantons;
+    background-color: $color-fons;
+}
+
+.pare{
+    @include caixa(100%, $border-color-pare, $background-color-pare);
+}
+
+.fill{
+    @include caixa(270px, $border-color-fill, $background-color-fill);
+    margin: 10px;
+    button{
+        margin: 10px;
+    }
+}
+
+h3{
+    color: $h3-color;
+}
+
+h4 {
+    color: $h4-color;
+}
